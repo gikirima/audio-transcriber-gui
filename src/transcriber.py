@@ -10,6 +10,11 @@ def resource_path(relative_path):
 class Transcriber:
     def __init__(self, model_name="turbo"):
         import whisper
+        # Pastikan folder models ada
+        models_dir = os.path.abspath("models")
+        os.makedirs(models_dir, exist_ok=True)
+        # Set TORCH_HOME agar model diunduh ke folder models
+        os.environ["TORCH_HOME"] = models_dir
         # Cek apakah file model lokal ada di folder models
         local_model_path = os.path.join("models", f"{model_name}.pt")
         if os.path.exists(local_model_path):
