@@ -5,7 +5,6 @@ The Audio Transcriber GUI is a Python application designed to transcribe audio f
 
 ## Features
 - Convert audio files from various formats to WAV.
-- Drag and drop functionality for easy file selection.
 - Browse functionality to select audio files.
 - Language selection for transcription.
 - Automatic saving of transcription results.
@@ -43,9 +42,9 @@ To set up the project, follow these steps:
    python src/main.py
    ```
 
-2. Use the drag-and-drop area or the browse button to select an audio file.
+2. Use the browse button to select an audio file.
 
-3. Choose the desired language for transcription from the dropdown menu.
+3. Choose the desired model and language for transcription from the dropdown menu.
 
 4. Click the 'Transcribe' button to start the transcription process.
 
@@ -54,9 +53,6 @@ To set up the project, follow these steps:
 ## Dependencies
 The project requires the following Python libraries:
 - `openai-whisper`
-- `tkinter`
+- `ffmpeg-python`
 
 Make sure to install these libraries using the `requirements.txt` file provided.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
