@@ -5,7 +5,6 @@ The Audio Transcriber GUI is a Python application designed to transcribe audio f
 
 ## Features
 - Convert audio files from various formats to WAV.
-- Drag and drop functionality for easy file selection.
 - Browse functionality to select audio files.
 - Language selection for transcription.
 - Automatic saving of transcription results.
